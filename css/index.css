@@ -1,0 +1,1269 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*---------------导航部分---------------*/
+.logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.myNav{
+	z-index: 5;
+	background-color: white;
+	border: none;
+	padding: 16px 20px;
+	margin: 0px;
+}
+
+.navUl li{
+	width:120px;
+	text-align: left;
+}
+.navUl li a{
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+
+/*斑马线按钮*/
+.switchBtn{
+	border: none;	
+}
+
+.dropdownSection{   
+	width: 180px;
+    text-align: center;
+    opacity: 1;
+    position: absolute;
+   	left:50%;
+   	transform: translateX(-50%);
+    top: 35px; 
+    padding-top: 31px;
+    z-index: 5;
+    display: none;
+
+}
+
+
+.navUl li:hover .dropdownSection{
+	animation: dropDownSecAnimate 0.5s forwards;
+	display: block;
+}
+
+
+@keyframes dropDownSecAnimate{
+	0%{
+		 top: 55px;
+		 opacity: 0;
+	}
+	100%{
+		 top: 35px;
+		 opacity: 1;
+		 
+		 
+	}
+}
+
+.dropdownDiv{
+	width: 100%;
+    background: #fff;
+    color: #888;
+    border-top: 1px solid #ebebeb;
+    padding: 16px 0;
+}
+.dropdownDiv a{
+	text-decoration: none;
+	color: #888888;
+}
+
+
+
+.gh{
+	animation: captionFadeInUp .2s 0.4s;
+}
+.touchFashion{
+	animation: captionFadeInUp .2s 0.5s;	
+}
+.gang{
+	font-size: 20px;
+	margin: 30px 0px;
+	animation: captionFadeInUp .2s 0.6s;
+}
+.msc{
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000;
+    font-size: 16px;
+    /*animation: captionFadeInUp .2s 0.7s;*/
+}
+
+
+/*@keyframes captionFadeInUp{
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+	    opacity: 1;
+	    -webkit-transform: none;
+	    transform: none;
+  }
+}*/
+
+
+/*-----关于品牌--------*/
+.aboutBrandBox{
+	width: 100%;
+	padding: 50px 2% 0px 2%;
+	overflow: hidden;
+
+}
+/*--------左边--------*/
+.aboutBrandLeft{
+	margin-bottom: 40px;
+	padding: 0px;
+	text-align: center;
+	font-size: 32px;
+}
+
+.lp1{
+	color: #333;
+	font-size: 32px;
+	font-family: arial;
+	margin-top: 16px;
+}
+
+.lp2{
+	color: #222;
+	font-size: 60px;
+	font-family:elephant;
+	margin: 4px 0px;
+}
+.lp3 img{
+	width: 21px;
+	height: 24px;
+}
+.lp4{
+	font-size: 28px;
+	color: #555;
+	font-family: castellar;
+}
+.lp5{
+	font-size: 14px;
+	color: #666;
+	font-family: arial;
+}
+.lp6{
+	font-size: 14px;
+	color: #666;
+	font-family: arial;
+}
+.lp7{	
+	color: #666;
+	font-family: arial;
+	margin-top: 40px;
+}
+.lp7 a{
+	color: #555;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.lp7 img{
+	vertical-align: middle;
+}
+
+
+/*右边*/
+.aboutBrandRight{	
+	padding: 0px;
+	margin: 0px;	
+}
+
+.aboutBrandRight img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+
+/*-服装欣赏-*/
+.clothesAdmireOuter{
+	width: 100%;
+    background: #121212;    
+    margin: 0px;
+   	padding-left: 2%;
+   	padding-right: 2%;
+   	padding-bottom: 20px;
+   
+}
+
+.clothAdmireTopBox{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	width: 100%;
+
+}
+.clothAdmireTopBox hr{
+	width: 18px;
+	height: 1px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: none;
+
+}
+
+.clothAdmireNav{
+	margin: 0 auto;
+	text-align: center;
+	padding: 6px 0px 30px 0px;
+}
+
+.clothAdmireNav a{
+	color: #fff;
+	padding: 0px 20px;
+}
+
+.clothesAdmireImgOuter{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-left: 15px;
+}
+
+.clothesAdmireImgWrap{
+	position: relative;
+}
+.clothesAdmireImgWrap::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0);
+}
+.clothesAdmireImgWrap img{
+	width: 100%;
+	height: 100%;
+	 -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+    filter: grayscale(50%);
+}
+.clothesAdmireImgWrap img:hover{
+	transform: scale(1.1);
+	 -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+    filter: grayscale(0);
+}
+
+.readMoreLine{
+	width: 100%;
+	text-align: center;
+	margin: 30px 0px;
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	justify-content:center;
+	align-items: center;
+}
+.readMoreLine a{
+	color: #fff;
+	font-size: 16px;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	margin: 0px 20px;
+}
+.readMoreLine i{
+	width: 25%;
+	height: 1px;
+	display: inline-block;
+    vertical-align: middle;
+    opacity: 0.25;
+    background: #fff;
+}
+
+/*--------时尚资讯--------*/
+#fashionNewsCarouselWrap{
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 40px;
+	position: relative;	
+	border-bottom: 1px solid #e3e3e3;
+	font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+	
+}
+
+.fashionNewsTopBox{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	width: 100%;
+
+}
+.fashionNewsTopBox hr{
+	width: 18px;
+	height: 1px;
+	margin: 0 auto;
+	background-color: #000;
+	border: none;
+
+}
+
+
+.newSwiperContainer {
+    width: 100%;
+
+}  
+/*时尚资讯水平轮播*/
+.showItems{
+	width: 100%;
+	margin: 0 auto;
+}
+.allItems{
+	font-weight: 300;
+}
+
+.slides{
+	border-right: 1px solid #E5E6E6;
+}
+.items1{
+	width: 96%;
+	margin-right: 4%;
+}
+.itemDate{
+	font-size: 42px;
+	color: #999999;
+	margin-bottom: 2px;
+	
+}
+
+.itemTitle{
+	font-size: 18px;
+	color: #222222;
+	margin: 14px 0px;
+}
+
+.itemDesc{
+	font-size: 14px;
+	color: #999999;
+	margin: 10px 0px;
+	
+	/*显示两行,超出部分用省略号*/
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;   /*显示2行*/
+}
+.fashionNewsHr{
+	width: 35px;
+    height: 1px;
+    background: rgba(0, 0, 0, .1);
+    margin: 20px 0;
+}
+/*.glyphicon .glyphicon-chevron-right{
+	color: #999!important;
+}*/
+.toTopBoxs{
+	width: 100%;
+	height: 100%;
+}
+.moreBoxs{
+	cursor: pointer;
+}
+.itemArrow{
+	color: #666!important;
+	display: none;
+}
+.items1:hover .fashionNewsHr{
+	width: 100%;
+	transition: .3s;
+	/*animation: moreToTop 0.3s;*/
+	/*animation-name:*/
+	/*animation-name:Effect1, Effect2;
+    animation-duration:3s, 2s;
+    animation-timing-function:linear, linear;
+    animation-delay:0, 2s;
+    animation-iteration-count:1, infinite;
+    animation-fill-mode:forwards, forwards;
+    animation-direction:normal, alternate;*/
+}
+.items1:hover .itemArrow{
+	animation: arrowToRight 0.3s;
+	display: inline-block;
+}
+.items1:hover .toTopBoxs{
+	transform: translateY(-10px);
+}
+@keyframes arrowToRight{
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+
+    100% {
+	    opacity: 1;
+	    -webkit-transform: none;
+	    transform: none;
+  }
+}
+
+.itemMore{
+	font-size: 14px;
+	color: #222222;
+	margin-top: 10px;
+}
+.itemMore a{
+	color: #222222;
+	text-decoration: none;
+}
+.prevNextBox{			
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	
+}
+
+.prevBtn,.nextBtn{
+	position: static !important;
+	width: 60px !important;
+	height: 60px !important;
+	outline: none;
+	margin-top: 0px !important;
+}
+.prevBtn{
+	background: url(../img/index/img11.jpg) center center no-repeat !important;
+	border-right: 1px solid #E5E6E6;
+}
+
+.nextBtn{
+	background: url(../img/index/img12.jpg) center center no-repeat !important;
+}
+
+
+
+/*--------赞助商logo传送带--------*/
+#sponsorLogoWrap{
+	width: 100%;
+	position: relative;	
+	padding: 40px 0px;	
+	
+}
+
+.swpWrapBox{
+	width: 82%;  /* 媒体查询,当屏幕变大,缩小所占的比例*/
+	padding: 1px 0px; 
+	margin: 0 auto;
+	display: flex;
+	
+}
+.sponsorSwiper {
+   width: 90%;
+   margin-top: 5px;
+
+}  
+.spnosorWrapper{
+	width: 100%;
+}
+
+.sponsorSlides img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.prevBtn1,.nextBtn1{
+	position: static !important;
+	width: 30px !important;
+	height: 30px !important;
+	border-radius: 50%;
+	outline: none;
+	margin-top: 0px !important;
+}
+
+.prevBtn1{
+	background: url(../img/index/img15.jpg) center center no-repeat !important;
+	
+}
+.prevBtn1:hover{
+	background: url(../img/index/img17.jpg) center center no-repeat !important;
+}
+
+.nextBtn1{
+	background: url(../img/index/img16.jpg) center center no-repeat !important;
+}
+.nextBtn1:hover{
+	background: url(../img/index/img18.jpg) center center no-repeat !important;
+}
+
+
+/*--------宗旨电话邮箱地址--------*/
+
+
+.ourInformationWrap{
+	width: 100%;
+	padding: 30px 2%;
+	text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    overflow: hidden;
+}
+.ourInforImg1{
+	display: block;
+	margin: 10px auto;	
+}
+.ourDeclaration{
+	margin: 20px 0 30px;
+	color: #DCDCDC;
+	font-size: 18px;
+	font-family: arial;
+}
+
+.ourInfo{
+	width: 94%;
+	margin: 0 auto;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	
+}
+.addrInfo,.telInfo{
+	border-right: 1px solid #e6e6e6;
+	padding-right: 3%;
+	
+}
+.addrInfo,.telInfo,.mailInfo{
+	padding-left: 2%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+}
+.addrInfo img,.telInfo img,.mailInfo img{
+	width: 50px;
+	height: 50px;
+}
+.addrRightBox,.telRightBox,.mailRightBox{
+	display: flex;
+	margin-left: 10px;
+	flex-direction: column;	
+}
+.addrInfo{
+	width: 36%;
+}
+.telInfo{
+	width: 30%;
+}
+.mailInfo{
+	width: 33%;
+}
+
+.title{
+	color: #aaa;
+}
+.content{
+	color: #666666;
+}
+
+
+/*--------footer--------*/
+footer{
+	width: 100%;
+	padding: 0px 2%;
+	overflow: hidden;
+	background-color: #222;
+}
+
+.footerLeftBox{
+	width: 90%;
+	float: left;
+	vertical-align: middle;
+}
+.footerNav{
+	padding: 16px 0px;
+	border-bottom: 1px solid #2d2d2d;
+}
+.footerNav a{
+	opacity: 0.8;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.footerLeftBox p{
+	width: 100%;
+	padding: 8px 0px;
+    opacity: 0.5;
+    color: #fff;
+	font-size: 14px;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+}
+
+.footerRightBox{
+	width: 10%;
+	float: left;
+	height: 100px;
+	line-height: 100px;
+     
+}
+
+#footerWord{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	
+}
+
+.footerRightBox img{
+	width: 20px;
+	height: 16.8px;
+}
+
+/*
+ * 大屏幕 >=1200 （大屏PC)
+ * 中等屏幕 993~1199 (PC)
+ * 小屏幕 768~992 （平板）
+ * 超小屏幕 <768 （移动设备）
+*/
+
+
+/*PC+平板 的交集  >=768*/
+@media only screen and (min-width: 768px) {
+	/*---------------放轮播的固定在中间/底层的盒子---------------*/
+
+	.fullscreen{
+		width: 100%;
+		height: 90%;
+		position: fixed;
+		top: 82px;
+		z-index: 1;
+	}
+	.caroulSection{
+		width: 100%;
+		height: 100%
+	}
+	.carousel-inner{
+		width: 100%;
+		height: 100%;
+	}
+	.item{
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.screen1,.screen2,.screen3{
+		background-image: url(../img/index/banner.jpg);
+	}
+	
+	
+	.arrowLeft,.arrowRight{
+		position: absolute;
+		top: 50%;
+	}
+	
+	.carousel-caption{
+		position: absolute;
+		left: 60%;
+		font-size: 42px !important;
+		color: #000000;
+		font-family: "微软雅黑";
+		top: 24%;
+		font-weight: lighter;
+		font-weight: 100 !important;
+		text-align: center;
+	}
+	
+		
+	/*---------------内容盒子---------------*/
+	.contentBox{
+		width: 100%;
+		position: absolute;
+		top: 897px;
+		left: 0px;
+		z-index: 2;
+		background:rgb(255,255,255,1);
+	}
+	
+	
+	/*邮箱地址电话*/
+	.addrInfo{
+		width: 36%;
+	}
+	.telInfo{
+		width: 30%;
+	}
+	.mailInfo{
+		width: 34%;
+	}
+	.addrInfo,.telInfo,.mailInfo{
+
+		float: left;
+		text-align: center;
+		height: 48px;
+	}
+	.addrInfo img,.telInfo img,.mailInfo img{
+		width: 48px;
+		float: left;
+		margin-right: 4px;
+		vertical-align: middle;
+	}
+	
+	.addrRightBox,.telRightBox,.mailRightBox{
+	
+		vertical-align: middle;
+		text-align: left;
+		
+
+		
+	}
+	.addrRightBox p,.telRightBox p,.mailRightBox p{
+		
+	}
+}
+
+/*平板+手机 的交集  <=992*/
+@media only screen and (min-width: 768px) {
+	.secDiv{
+		display: none;
+	}
+	
+}
+
+
+
+
+
+/*PC 993-1200*/
+@media only screen and (min-width:993px ) {
+	.logo img{
+		width: 102px;
+		height: 50px;
+	}
+	.footerLeftBox{
+		text-align: left;
+	}
+
+}
+
+
+/*平板 768-992*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	
+	/*---------------放轮播的固定在中间/底层的盒子---------------*/
+	
+	.item{
+		background-size: 20% cover;
+	}
+
+	.carousel-caption{
+		display: none;
+	}
+
+	
+	/*关于品牌*/
+	.aboutBrandBox{
+		padding: 20px 0px 0px 0px;
+		margin: 0px;
+	}
+		
+	.lp7{
+		margin-top: 30px;
+	}
+	/*服饰欣赏*/
+	.clothesAdmireOuter,.clothesAdmireImgOuter{
+	   	padding: 0px;
+	   	margin: 0px;
+   
+	}
+	
+	.clothesAdmireImgWrap{
+		max-height: 420px;
+		margin-bottom: 16px;
+		overflow: hidden;
+	}
+	
+	.readMoreLine{
+		margin: 20px 0px;
+	}
+	
+	    
+}
+
+
+@media only screen and (max-width: 1350px) {
+		.footerNav a{
+			margin: 0 10px;
+			font-size: 12px;
+		}
+		.footerLeftBox p{
+			font-size: 12px;
+		}
+		
+		.footerLeftBox{
+			width: 80%;
+		}
+		.footerRightBox{
+			width: 20%;
+			text-align: right;
+		}
+}
+@media only screen and (max-width: 1140px) {
+	.msc{
+		font-size: 14px;
+	}
+}
+
+/*992px以下时导航条菜单样式重置
+ ，默认小于768的时候才会出现斑马线，
+ 我改成了992---bootstrap.css
+ * */
+@media only screen and (max-width: 992px) {
+	.logo img{
+		width: 90px;
+		height: 44px;
+	}
+	.myNav{
+		padding: 5px 20px;
+	}
+	
+	
+	/*下拉菜单,<=992不显示*/
+	.dropdownSection{
+		display: none;
+	}
+	.navUl li:hover .dropdownSection{
+		display: none;
+	}
+	
+	/*折叠导航栏样式*/
+	.navUl{
+		width:100%;	
+	    min-width: 320px;
+	    max-width: 992px;
+	    background: rgba(85,85,85,0.9);
+	    margin: 0px;
+	    padding: 0px;
+	    position: fixed;
+	    top: 59px;
+	    left: 0px;	   
+	}
+	.navUl li{
+		width: 100%;
+		border-bottom: 1px solid #929292;
+		padding: 15px 0;
+		color: white;
+		text-align: center;	
+		margin: 0px;		
+	}
+	/*下拉时菜单的字体*/
+	.navUlA{
+		color: white !important;
+	}
+	.navUlA:hover{
+		color: white !important;
+	}
+	/*时尚资讯小屏幕(显示两栏)时去掉边框*/
+	.slides{
+		border:none;
+	}
+	
+	/*宗旨邮箱地址*/
+	.ourInfo{
+		width: 100%;
+		font-size: 12px;
+	
+	}
+	.addrInfo img,.telInfo img,.mailInfo img{
+		width: 35px;
+		height: 35px;
+	}
+	.addrInfo,.telInfo,.mailInfo{
+		justify-content: center;
+	}
+	
+	/*footer*/
+	
+	.footerNav a{
+		margin: 0 10px;
+		font-size: 12px;
+	}
+	.footerLeftBox p{
+		font-size: 12px;
+	}
+	
+	.footerLeftBox{
+		width: 80%;
+	}
+	.footerRightBox{
+		width: 20%;
+		text-align: right;
+	}
+	.footerLeftBox{
+		text-align: left;
+	}
+	
+	
+}
+
+/*手机 <=767*/
+@media only screen and (max-width: 768px) {
+	/*轮播*/
+	.secDiv{
+		display: none;
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+		
+	}
+	.secA{
+		display: inline-block;
+		margin: 0 10px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px !important;
+	}
+	
+	.fullscreen{
+		position: absolute;
+		top: 60px;
+		left: 0px;
+	    z-index: 2;
+		width: 100%;
+		height: 47vh;
+		min-height:47vh;
+	}
+
+	.aboutBrandBox{
+		width: 100%;
+		box-sizing: border-box;
+		padding:0;
+		margin: 0px;
+		margin-top: 8px;
+		
+	}
+	.aboutBrandLeft{
+		margin-bottom: 10px;
+	}
+	.aboutBrandRight{
+		margin-bottom: 10px;
+	}
+	.aboutBrandRight img{
+		margin-bottom: 0px;
+		
+	}
+
+
+	.caroulSection{
+		width: 100%;
+		height: 47vh;
+		min-height:47vh;
+		margin: 0;
+		
+	}
+	
+	
+	
+	.cinner{
+		width: 100%;
+		height: 47vh;
+		min-height:47vh;
+		
+	}
+	
+	.item{
+		width: 100%;
+		height: 47vh;
+		min-height:47vh;
+		background-size: cover;
+		background-position: 30% center;
+	}
+	.carousel-control{
+		display: none;
+		/*background-color: transparent;
+		height:30px;
+		top:60%;
+		transform:translateY(-50%);*/
+	}
+	
+	
+	.screen1,.screen2,.screen3{
+		
+		background-image: url(../img/index/banner.jpg);
+		
+	}
+	.arrowLeft,.arrowRight{
+		display: none;
+	}
+	
+	.carousel-caption{
+		display: none;
+	}
+	.carousel-indicators{
+		position: absolute;
+		height: 10px;
+		line-height: 10px;
+		bottom: 35px;
+	}
+	.carousel-indicators li{
+		width: 8px;
+		height: 8px;
+		margin: 0px 4px;
+		background: #999999;
+		border: none;
+	}
+	.carousel-indicators .active{
+		width: 8px;
+		height: 8px;
+		margin: 0px 4px;
+		background: #333333;
+		border: none;
+	}
+	.lp1{
+		font-size: 18px;
+		margin: 8px 0 4px;
+	}
+	.lp2{
+		font-size: 28px;
+	}
+	.lp3 {
+		margin-bottom: 5px;
+	}
+	.lp3 img{
+		width: 10px;
+		height: 11.5px;
+	}
+	.lp4{
+		font-size: 16px;
+	}
+	.lp5,.lp6{
+		font-size: 12px;
+		margin-bottom: 2px;
+	}
+	.lp7{
+		
+		margin: 0px;
+	}
+	.lp7 a{
+		font-size: 14px;
+	}
+	/*---------------内容盒子---------------*/
+	.contentBox{
+		width: 100%;
+		background:rgb(255,255,255,1);
+		z-index: 2;
+		position: absolute;
+		text-align: center;
+		top: 200px;
+		left: 0px;	
+		padding: 0px;
+		margin: 0px;	
+	}
+	
+	
+	
+	
+	
+	/*服饰欣赏*/
+	.clothesAdmireOuter,.clothesAdmireImgOuter{
+	   	padding: 0px;
+	   	margin: 0px;   
+	}
+	
+	.clothesAdmireImgWrap{
+		max-height: 360px;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	
+	.readMoreLine{
+		margin: 10px 0px;
+	}
+	.clothAdmireTopBox{
+		font-size: 20px;
+	}
+	.clothAdmireNav{
+		padding: 6px 0px 20px 0px;
+	}
+	    
+	.clothAdmireNav a{
+		font-size: 12px;
+	}
+	.fashionNewsTopBox p{
+		font-size: 20px;
+	}
+	.itemDate{
+		font-size: 22px;
+	}
+	.itemTitle{
+		font-size: 14px;
+		margin: 5px 0;
+	}
+	.itemDesc{
+		font-size: 12px;
+		margin: 4px 0;
+	}
+	.itemMore a{
+		font-size: 12px;
+	}
+	.fashionNewsHr{
+		margin: 10px 0;
+	}
+	.prevNextBox{
+		height: 33px;
+		line-height: 33px;
+	}
+	
+	.prevBtn, .nextBtn {
+	    
+	    width: 33px !important;
+	    height: 33px !important;
+	    outline: none;
+	    margin-top: 0px !important;
+    }
+    #fashionNewsCarouselWrap{
+		box-sizing: border-box;
+		padding-bottom: 20px;
+
+	
+	}
+	#sponsorLogoWrap{
+		padding: 20px 0;
+	}
+	
+	.ourInformationWrap{
+		padding: 20px 2%;
+	}
+	.ourDeclaration{
+		margin: 20px 0;
+		font-size: 16px;
+	}
+	/*邮箱地址电话*/
+	.ourInfo{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	.addrInfo{		
+		width: 100%;
+		clear: both;
+		border: none;
+		margin-bottom: 3%;
+	}
+	.telInfo{
+		width: 45%;
+		
+	}
+	.mailInfo{
+		width: 55%;
+		/*justify-content: flex-start;*/		
+	}
+	.addrInfo,.telInfo{
+		float: left;
+		border:none;
+		
+	}
+	.addrInfo,.telInfo,.mailInfo{		
+		justify-content: flex-start;
+	}
+	
+	.addrInfo img,.telInfo img,.mailInfo img{
+		float: left;
+	}
+	
+	.addrRightBox,.telRightBox,.mailRightBox{	
+		text-align: left;
+
+		
+	}
+	.items1{
+		text-align: left;
+	}
+
+
+	/*关注我们*/
+	footer{
+		width: 100%;
+		/*text-align: center;  contentBox设过了*/
+	}
+
+	.footerLeftBox{
+		width: 100%;
+		float: none;
+	}
+	.footerLeftBox p{
+		margin: 0px;
+	}
+	.footerRightBox{
+		width: 100% !important;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		float: none;
+		
+	}
+	#footerWord{
+		font-size: 12px;
+	}
+	.footerRightBox img{
+		width: 20px;
+		height: 16px;
+	}
+	.footerLeftBox{
+		text-align: center;
+	}
+	
+
+}
+@media only screen and (max-width: 450px) {
+	/*邮箱地址电话*/
+
+	.ourInfo{
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.addrInfo, .telInfo, .mailInfo{
+		justify-content: flex-start;
+	}
+	.addrInfo,.telInfo{		
+		width: 100%;
+		clear: both;
+		border: none;
+		margin-bottom: 3%;
+		
+	}
+
+	.mailInfo{
+		width: 100%;	
+		clear: both;	
+	}
+	.addrInfo,.telInfo{
+		float: none;
+		
+	}
+
+	
+	.addrRightBox,.telRightBox,.mailRightBox{
+		display: flex;
+		flex-direction: column;	
+		text-align: left;
+		
+	}
+	
+}

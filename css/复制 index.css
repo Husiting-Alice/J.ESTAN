@@ -1,0 +1,552 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*导航部分*/
+.logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.myNav{
+	z-index: 5;
+	background-color: white;
+	border: none;
+	padding: 16px 20px;
+	margin: 0px;
+}
+
+.navUl li{
+	width:120px;
+	text-align: left;
+}
+.navUl li a{
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+
+/*斑马线按钮*/
+.switchBtn{
+	border: none;	
+}
+
+/*放轮播的固定在中间/底层的盒子*/
+#staticCenterBox{    
+	width: 100%;
+	height: 815px;
+	/*background: url(../img/index/banner.jpg) no-repeat;
+	background-position: 20% 0;*/
+	position: fixed;
+	/*z-index: -1;*/
+	left: 0;
+	top: 82px;
+	background-attachment: fixed;
+}
+
+
+/*轮播*/
+ .bannerImg{
+ 	/*height: 815px;*/
+ }
+ 
+/*上一张/下一张*/
+ .arrowLeft,.arrowRight{
+ 	position: absolute;
+ 	top: 50%; 	
+ }
+
+
+/*内容盒子*/
+
+
+/*关于品牌*/
+.aboutBrandBox{
+	width: 100%;
+	padding: 50px 2% 0px 2%;
+	overflow: hidden;
+
+}
+/*左边*/
+.aboutBrandLeft{
+	margin-bottom: 40px;
+	padding: 0px;
+	text-align: center;
+	font-size: 32px;
+}
+.lp1{
+	color: #333;
+	font-size: 32px;
+	font-family: arial;
+	margin-top: 16px;
+}
+.lp2{
+	color: #222;
+	font-size: 60px;
+	font-family:elephant;
+	margin: 4px 0px;
+}
+.lp3 img{
+	width: 21px;
+	height: 24px;
+}
+.lp4{
+	font-size: 28px;
+	color: #555;
+	font-family: castellar;
+}
+.lp5{
+	font-size: 14px;
+	color: #666;
+	font-family: arial;
+}
+.lp6{
+	font-size: 14px;
+	color: #666;
+	font-family: arial;
+}
+.lp7{
+	
+	color: #666;
+	font-family: arial;
+	margin-top: 40px;
+}
+.lp7 a{
+	color: #555;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.lp7 img{
+	vertical-align: middle;
+}
+
+
+/*右边*/
+.aboutBrandRight{	
+	padding: 0px;
+	margin: 0px;	
+}
+
+.aboutBrandRight img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+
+/*服装欣赏-*/
+.clothesAdmireOuter{
+	width: 100%;
+    background: #121212;    
+    margin: 0px;
+   	padding: 0px 2%;
+   
+}
+
+.clothAdmireTopBox{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	width: 100%;
+
+}
+.clothAdmireTopBox hr{
+	width: 18px;
+	height: 1px;
+	margin: 0 auto;
+	background-color: #fff;
+
+}
+
+.clothAdmireNav{
+	margin: 0 auto;
+	text-align: center;
+	padding: 6px 0px 30px 0px;
+}
+
+.clothAdmireNav a{
+	color: #fff;
+	padding: 0px 20px;
+}
+
+.clothesAdmireImgOuter{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-left: 15px;
+}
+
+.clothesAdmireImgWrap img{
+	width: 100%;
+	height: 100%;
+}
+
+.readMoreLine{
+	width: 100%;
+	text-align: center;
+	margin: 30px 0px;
+}
+.readMoreLine a{
+	color: #fff;
+	font-size: 16px;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	margin: 0px 20px;
+}
+.readMoreLine i{
+	width: 124px;
+	height: 1px;
+	display: inline-block;
+    vertical-align: middle;
+    opacity: 0.25;
+    background: #fff;
+}
+
+/*时尚资讯*/
+.fashionNews{
+	width: 100%;
+	padding: 0px 2%;
+	background-color: #fff;
+}
+
+.fashionNewsTopBox{
+	margin-top: 24px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #333;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	width: 100%;
+
+}
+.fashionNewsTopBox hr{
+	width: 18px;
+	height: 1px;
+	margin: 0 auto;
+	background-color: #333;
+}
+/*时尚资讯水平轮播*/
+.showItems{
+	width: 100%;
+	margin: 0 auto;
+	background-color: yellow;
+}
+.allItems{
+	font-weight: 300;
+}
+
+.itemDate{
+	font-size: 46px;
+	color: #999999;
+	
+}
+
+.itemTitle{
+	font-size: 18px;
+	color: #222222;
+}
+
+.itemDesc{
+	font-size: 14px;
+	color: #999999;
+}
+
+.itemMore{
+	font-size: 14px;
+	color: #222222;
+}
+
+
+
+
+/*赞助商logo传送带*/
+.sponsor{
+	width: 100%;
+	padding: 0 2%;
+}
+.sponsorShows{
+	background-color: pink;
+	width: 60%;
+	margin: 0 auto;
+	
+}
+
+
+
+/*宗旨电话邮箱地址*/
+.ourInformationWrap{
+	width: 100%;
+	padding: 30px 2%;
+	text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    overflow: hidden;
+}
+.ourInforImg1{
+	display: block;
+	margin: 10px auto;
+	
+}
+.ourDeclaration{
+	margin: 20px 0 30px;
+	color: #DCDCDC;
+	font-size: 18px;
+	font-family: arial;
+}
+.ourInfo{
+	width: 100%;
+}
+.addrInfo,.telInfo,.mailInfo{
+	width: 30.33%;
+	margin-left: 3%;
+	float: left;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+.addrInfo,.telInfo{
+	border-right: 1px solid #e6e6e6;
+}
+.addrInfo img,
+.telInfo img,
+.mailInfo img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.addrRightBox,
+.telRightBox,
+.mailRightBox{
+	float: left;
+	text-align: left;
+	margin-left: 6px;
+}
+.title{
+	color: #aaa;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.content{
+	color: #666666;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+
+
+
+/*footer*/
+footer{
+	width: 100%;
+	padding: 0px 2%;
+	overflow: hidden;
+	background-color: #222;
+}
+
+.footerLeftBox{
+	width: 90%;
+	float: left;
+	vertical-align: middle;
+}
+.footerNav{
+	padding: 16px 0px;
+	border-bottom: 1px solid #2d2d2d;
+}
+.footerNav a{
+	opacity: 0.8;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 14px;
+}
+.footerLeftBox p{
+	width: 100%;
+	padding: 8px 0px;
+    opacity: 0.5;
+    color: #fff;
+	font-size: 14px;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+}
+
+.footerRightBox{
+	width: 10%;
+	float: left;
+	font-size: 14px;
+	color: #fff;
+    display: flex;
+    align-items: center;
+    height: 103px;
+    padding-left: 8px;
+    
+    
+}
+
+.footerRightBox img{
+	width: 20px;
+	height: 16.8px;
+}
+
+
+
+
+
+
+
+/*大屏幕*/
+@media only screen and (min-width:993px ) {
+	.logo img{
+		width: 102px;
+		height: 50px;
+	}
+}
+
+/*中小屏幕*/
+/*默认小于768的时候才会出现斑马线，我改成了992---bootstrap.css*/
+@media only screen and (max-width:992px ) {
+
+	.logo img{
+		width: 90px;
+		height: 44px;
+	}
+	.myNav{
+		padding: 5px 20px;
+	}
+	/*折叠导航栏样式*/
+	.navUl{
+		width:100%;	
+	    min-width: 320px;
+	    max-width: 992px;
+	    background: rgba(85,85,85,0.9);
+	    margin: 0px;
+	    padding: 0px;
+	    position: fixed;
+	    top: 60px;
+	    left: 0px;	   
+	}
+	.navUl li{
+		width: 100%;
+		border-bottom: 1px solid #929292;
+		padding: 15px 0;
+		color: white;
+		text-align: center;	
+		margin: 0px;		
+	}
+	/*下拉时菜单的字体*/
+	.navUlA{
+		color: white !important;
+	}
+	.navUlA:hover{
+		color: white !important;
+	}
+	
+	
+	#staticCenterBox{
+		top: 58px;
+	}
+	    
+}
+
+
+.contentBox{
+	width: 100%;
+	background:rgb(255,255,255,1);
+	z-index: 2;
+	position: absolute;
+	text-align: center;
+	top: 200px;
+	left: 0px;	
+	padding: 0px;
+	margin: 0px;
+
+	
+}
+
+	.fullscreen{
+	position: absolute;
+	top: 60px;
+	left: 0px;
+    z-index: 2;
+	width: 100%;
+	height: 70%;
+	background-color: red;
+	}
+
+
+.caroulSection{
+	width: 100%;
+	height: 100%;
+}
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+}
+.item{
+	width: 100%;
+	height: 100%;
+	background-color: yellow;
+	background-size: cover;
+	background-position: 30% center;
+}
+.screen1,.screen2,.screen3{
+	background-image: url(../img/index/banner.jpg);
+}
+
+/*.fullscreen{
+	width: 100%;
+	height: 80%;	
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	background-color: red;
+}
+.caroulSection{
+	width: 100%;
+	height: 100%;
+}
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+}
+.item{
+	width: 100%;
+	height: 100%;
+	background-color: yellow;
+	background-size: cover;
+	background-position: center;
+}
+
+.screen1,.screen2,.screen3{
+	background-image: url(../img/index/banner.jpg);
+}*/
+
+
+/*.fullscreen{
+	width: 100%;
+	height: 90%;
+	position: fixed;
+	top: 82px;
+}
+.caroulSection{
+	width: 100%;
+	height: 100%
+	
+}
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+	
+}
+.item{
+	width: 100%;
+	height: 100%;
+
+	background-size: 100% 100%;
+
+}*/
+
+
+

@@ -1,0 +1,475 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+}
+/*---------------导航部分---------------*/
+
+.logo{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.myNav{
+	z-index: 5;
+	background-color: white;
+	border: none;
+	padding: 16px 20px;
+	margin: 0px;
+}
+
+.navUl li{
+	width:120px;
+	text-align: left;
+}
+.navUl li a{
+	font-size: 15px;
+}
+
+/*斑马线按钮*/
+.switchBtn{
+	border: none;	
+}
+
+
+/*--------tab栏--------*/
+.tabUl{
+	width: 100%;
+	background-color: rgb(255,255,255);
+	margin-bottom: 4px;
+	border-bottom: 1px solid #ebebeb;
+}
+.tabLi{
+	padding: 20px 10px;	
+	margin: 0px 16px;
+	display: inline-block;
+	
+}
+
+/*.tabLi:hover{
+	border-bottom: 1px solid #727272;
+}*/
+.tabLi a{
+	color: #555;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.tabDropDownWrap{
+	width: 100%;
+	
+	
+}
+/*品牌介绍*/
+
+.tabDropDownDiv{
+	width: 100%;
+	
+}
+
+
+.companyNews,.industryNews{
+	display: none;
+}
+
+
+
+
+
+
+
+
+/*--------宗旨电话邮箱地址--------*/
+
+
+.ourInformationWrap{
+	width: 100%;
+	padding: 30px 2%;
+	text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    overflow: hidden;
+}
+.ourInforImg1{
+	display: block;
+	margin: 10px auto;	
+}
+.ourDeclaration{
+	margin: 20px 0 30px;
+	color: #DCDCDC;
+	font-size: 18px;
+	font-family: arial;
+}
+
+.ourInfo{
+	width: 94%;
+	margin: 0 auto;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	
+}
+.addrInfo,.telInfo{
+	border-right: 1px solid #e6e6e6;
+	padding-right: 3%;
+	
+}
+.addrInfo,.telInfo,.mailInfo{
+	padding-left: 2%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+}
+.addrInfo img,.telInfo img,.mailInfo img{
+	width: 50px;
+	height: 50px;
+}
+.addrRightBox,.telRightBox,.mailRightBox{
+	display: flex;
+	margin-left: 10px;
+	flex-direction: column;	
+}
+.addrInfo{
+	width: 36%;
+}
+.telInfo{
+	width: 30%;
+}
+.mailInfo{
+	width: 33%;
+}
+
+.title{
+	color: #aaa;
+}
+.content{
+	color: #666666;
+}
+
+/*--------footer--------*/
+footer{
+	width: 100%;
+	padding: 0px 2%;
+	overflow: hidden;
+	background-color: #222;
+}
+
+.footerLeftBox{
+	width: 90%;
+	float: left;
+	vertical-align: middle;
+}
+.footerNav{
+	padding: 16px 0px;
+	border-bottom: 1px solid #2d2d2d;
+}
+.footerNav a{
+	opacity: 0.8;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.footerLeftBox p{
+	width: 100%;
+	padding: 8px 0px;
+    opacity: 0.5;
+    color: #fff;
+	font-size: 14px;
+	
+}
+
+.footerRightBox{
+	width: 10%;
+	float: left;
+	height: 100px;
+	line-height: 100px;
+     
+}
+
+#footerWord{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	
+}
+
+.footerRightBox img{
+	width: 20px;
+	height: 16.8px;
+}
+
+/*
+ * 大屏幕 >=1200 （大屏PC)
+ * 中等屏幕 993~1199 (PC)
+ * 小屏幕 768~992 （平板）
+ * 超小屏幕 <768 （移动设备）
+ */
+
+
+
+/*PC 993+*/
+@media only screen and (min-width:993px ) {
+	.logo img{
+		width: 102px;
+		height: 50px;
+	}
+	
+	.banner2{
+		width: 100%;
+		height: 418px;
+		position: fixed;
+		top: 82px;
+		z-index: 1;
+		background: url(../img/brandStory/banner2.jpg) center center no-repeat;
+	}
+	.contentBox{
+		width: 100%;
+		position: relative;
+		top: 500px;
+		left: 0px;
+		z-index: 2;
+		text-align: center;
+		background:rgb(255,255,255,1);
+		
+	}
+	
+
+}
+
+@media only screen and (max-width: 1350px) {
+		.footerNav a{
+			margin: 0 10px;
+			font-size: 12px;
+		}
+		.footerLeftBox p{
+			font-size: 12px;
+		}
+		
+		.footerLeftBox{
+			width: 80%;
+		}
+		.footerRightBox{
+			width: 20%;
+			text-align: right;
+		}
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1080px) {
+
+}
+
+/*992px以下时导航条菜单样式重置
+ ，默认小于768的时候才会出现斑马线，
+ 我改成了992---bootstrap.css
+ * */
+@media only screen and (max-width: 992px) {
+	.logo img{
+		width: 90px;
+		height: 44px;
+	}
+	.myNav{
+		padding: 5px 20px;
+	}
+	/*折叠导航栏样式*/
+	.navUl{
+		width:100%;	
+	    min-width: 320px;
+	    max-width: 992px;
+	    background: rgba(85,85,85,0.9);
+	    margin: 0px;
+	    padding: 0px;
+	    position: fixed;
+	    top: 59px;
+	    left: 0px;	   
+	}
+	.navUl li{
+		width: 100%;
+		border-bottom: 1px solid #929292;
+		padding: 15px 0;
+		color: white;
+		text-align: center;	
+		margin: 0px;		
+	}
+	/*下拉时菜单的字体*/
+	.navUlA{
+		color: white !important;
+	}
+	.navUlA:hover{
+		color: white !important;
+	}
+
+	/*宗旨邮箱地址*/
+	.ourInfo{
+		width: 100%;
+		font-size: 12px;
+	
+	}
+	.addrInfo img,.telInfo img,.mailInfo img{
+		width: 35px;
+		height: 35px;
+	}
+	.addrInfo,.telInfo,.mailInfo{
+		justify-content: center;
+	}
+	
+	/*footer*/
+	
+	.footerNav a{
+		margin: 0 10px;
+		font-size: 12px;
+	}
+	.footerLeftBox p{
+		font-size: 12px;
+	}
+	
+	.footerLeftBox{
+		width: 80%;
+	}
+	.footerRightBox{
+		width: 20%;
+		text-align: right;
+	}
+	
+	.banner2{
+		left: 0px;
+		width: 100%;
+		/*height: auto;*/
+		min-height: 360px;
+		background: url(../img/index/banner.jpg) 20% center no-repeat;
+		background-size: cover;
+		margin-top: 60px;
+	}
+	.contentBox{
+		width: 100%;
+		background:rgb(255,255,255,1);
+		text-align: center;
+		padding: 0px;
+		margin: 0px;	
+	}
+	
+
+
+}
+
+/*手机 <=767*/
+@media only screen and (max-width: 768px) {
+		
+	
+	/*邮箱地址电话*/
+	.ourInfo{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	.addrInfo{		
+		width: 100%;
+		clear: both;
+		border: none;
+		margin-bottom: 3%;
+	}
+	.telInfo{
+		width: 45%;
+		
+	}
+	.mailInfo{
+		width: 55%;
+		/*justify-content: flex-start;*/		
+	}
+	.addrInfo,.telInfo{
+		float: left;
+		border:none;
+		
+	}
+	.addrInfo,.telInfo,.mailInfo{		
+		justify-content: flex-start;
+	}
+	
+	.addrInfo img,.telInfo img,.mailInfo img{
+		float: left;
+	}
+	
+	.addrRightBox,.telRightBox,.mailRightBox{	
+		text-align: left;	
+	}
+
+	/*关注我们*/
+	footer{
+		width: 100%;
+		/*text-align: center;  contentBox设过了*/
+	}
+
+	.footerLeftBox{
+		width: 100%;
+		float: none;
+	}
+	.footerLeftBox p{
+		margin: 0px;
+	}
+	.footerRightBox{
+		width: 100% !important;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		float: none;
+		
+	}
+	#footerWord{
+		font-size: 12px;
+	}
+	.footerRightBox img{
+		width: 20px;
+		height: 16px;
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 450px) {
+	/*邮箱地址电话*/
+
+	.ourInfo{
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.addrInfo, .telInfo, .mailInfo{
+		justify-content: flex-start;
+	}
+	.addrInfo,.telInfo{		
+		width: 100%;
+		clear: both;
+		border: none;
+		margin-bottom: 3%;
+		
+	}
+
+	.mailInfo{
+		width: 100%;	
+		clear: both;	
+	}
+	.addrInfo,.telInfo{
+		float: none;
+		
+	}
+
+	
+	.addrRightBox,.telRightBox,.mailRightBox{
+		display: flex;
+		flex-direction: column;	
+		text-align: left;
+		
+	}
+	
+}
