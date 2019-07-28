@@ -339,11 +339,7 @@ footer{
  * 超小屏幕 <768 （移动设备）
  */
 
-@media only screen and (min-width:767px) {
-	.secDiv{
-		display: none;
-	}
-}
+
 
 /*PC 993+*/
 @media only screen and (min-width:993px ) {
@@ -371,7 +367,10 @@ footer{
 		
 	}
 	.footerLeftBox{
-			text-align: left;
+		text-align: left;
+	}
+	.secDiv{
+		display: none;
 	}
 	
 
@@ -527,22 +526,9 @@ footer{
 		margin: 0px;	
 	}
 	.footerLeftBox{
-			text-align: left;
+		text-align: left;
 	}
-
-	
-
-
-}
-@media only screen and (max-width: 820px) {
-	.allNewsLiRightP{
-		margin-top: 10px;
-		margin-bottom: 0px;
-	}
-}
-/*手机 <=767*/
-@media only screen and (max-width: 768px) {
-			/*轮播*/
+				/*轮播*/
 	.secDiv{
 		display: none;
 		width: 100%;
@@ -565,6 +551,20 @@ footer{
 		color: #fff;
 		text-decoration: none;
 	}
+
+	
+
+
+}
+@media only screen and (max-width: 820px) {
+	.allNewsLiRightP{
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+}
+/*手机 <=767*/
+@media only screen and (max-width: 768px) {
+
 	.banner2{
 		min-height: 38vh;
 	}
