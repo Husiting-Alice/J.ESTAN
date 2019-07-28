@@ -1,3 +1,4 @@
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -91,6 +92,7 @@
 	padding: 20px 10px;	
 	margin: 0px 16px;
 	display: inline-block;
+	cursor: pointer;
 	
 }
 
@@ -103,167 +105,205 @@
 	text-decoration: none;
 }
 
+/*tab栏显示/隐藏部分*/
+
 .tabDropDownWrap{
 	width: 100%;
-	
-	
 }
-/*品牌介绍*/
 
 .tabDropDownDiv{
 	width: 100%;
+	padding: 0px;
+	padding: 60px 0 70px
+}
+/*.newArrival{
+	
+}*/
+/*新品/NEW-*/
+.newArrivalRow{
+	width: 96%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 	
 }
+.newArrivalBox{
+	width: 24%;
+	position: relative;
+	cursor: pointer;
+	
+}
+.newArrivalImgWrap{
+	width: 100%;
+	/*解决图片hover放大盒子也放大问题*/
+	overflow: hidden; 
+}
+.newArrivalImg{
+	max-width: 100%;
+	max-height: 100%;
+	transition: 0.5s;
+	-webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+    filter: grayscale(50%);
+}
+.newArrivalImg:hover{
+	transform: scale(1.06);
+	-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+    filter: grayscale(0);
+    
+}
 
-.tabDropDownDivWords{
-	width: 82%;
+@keyframes fup{
+	from{
+		opacity: 0;
+		bottom: -100px;	
+	}
+	to{
+		opacity: 1;	
+		bottom: 0px;
+	}
+}
+@-webkit-keyframes fup{
+	from{
+		opacity: 0;
+		bottom: -100px;	
+	}
+	to{
+		opacity: 1;	
+		bottom: 0px;
+	}
+}
+
+@keyframes fup2{
+	from{
+		opacity: 0;
+		bottom: -120px;	
+	}
+	to{
+		opacity: 0.1;
+		bottom: 0px;	
+	}
+}
+@-webkit-keyframes fup2{
+	from{
+		opacity: 0;
+		bottom: -120px;	
+	}
+	to{
+		opacity: 0.1;
+		bottom: 0px;	
+	}
+}
+@keyframes fup3{
+	from{
+		opacity: 0;
+		bottom: -120px;	
+	}
+	to{
+		opacity: 1;
+		bottom: -20px;	
+	}
+}
+@-webkit-keyframes fup3{
+	from{
+		opacity: 0;
+		bottom: -120px;	
+	}
+	to{
+		opacity: 1;
+		bottom: -20px;	
+	}
+}
+
+.newArrivalBox:hover .newArrivalWhiteBox{
+	animation: fup 1s ease 0.2s;
+	/*display: block;*/
+	/*transition: visibility 0.2s linear 0.2s,opacity .4s linear;*/
+	transition: visibility 0.2s linear 0.2s;
+	visibility: visible;
+	
+}
+.newArrivalBox:hover .newArrivalOrder{
+	animation: fup2 1s ease 0.2s;
+	transition: visibility 1s linear 0.2s; 
+	visibility: visible;
+}
+.newArrivalBox:hover .newArrivalBlackRetang{
+	animation: fup3 1s ease 0.2s;
+	transition: visibility 0.2s linear 0.2s;
+	visibility: visible;
+}
+.newArrivalWhiteBox{
+	position: absolute;
+	/*background: rgb(255,255,255);*/
+	width: 90%;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /*display: none;*/
+   visibility: hidden;
+}
+/*.newArrivalWhiteBox:hover{
+	animation: fup 1s ease 0.2s;
+}*/
+.newArrivalWhiteInner{
+	width: 100%;
+    text-align: center;
+    background:rgba(255,255,255,0.9);
+    position: relative;
+    padding: 30px 0;
+}
+.newArrivalP2I1,.newArrivalP2I2{
+	width: 18px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #aaa;
+    margin: 0 8px;
+}
+.newArrivalP1{
+	width: 100%;
+	font-size: 18px;
+    color: #333;
+}
+.newArrivalP2{
+	width: 100%;
+	padding: 0px;
 	margin: 0 auto;
-	padding: 60px 30px;
-	border-bottom: 1px dashed #e8e8e8;
 }
-.tabDropDownTitle{
-	font-weight: normal;
-	font-size: 22px;
-	color: #363636;
-	margin-bottom:30px;
+.newArrivalP2Span{
+    color: #aaa;
+    font-size: 12px;
 }
-.tabDropDownContent{
-	text-align: center;
-	line-height: 36px;
-	color: #666666;
+
+.newArrivalOrder{
+	font-size: 75px;
+	color:#333;
+	position: absolute;
+	right: 20px;
+	bottom: 5px;
+	opacity: 0.1;
+	visibility:hidden;
+}
+.newArrivalBlackRetang{
+	width: 4px;
+    height: 45px;
+    background: #363636;
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    visibility:hidden;
 }
 
 
-.tabDropDownDivImgs{
-	width: 80%;
-	margin: 0 auto;
-	display: flex;
-	padding: 5% 0px;
-}
-.tabDropDownDivImgs img{
-	width: 32%;
-	flex: 1;
-}
-
-.tabImg1{
-	margin-right: 2%;
-}
-.tabImg2{
-	margin-right: 2%;
-}
-/*设计团队,发展历程*/
-.designGroup,.developingRout{
+.suit,.shapwear,.maillot{
 	display: none;
 }
 
-/*设计团队*/
-.designerWrapRow{
-	width: 90%;
-	margin: 0 auto;
-	padding: 4% 0;
-	overflow: hidden;
-}
-.designerWrap{
-	width: 48%;
-	margin-bottom: 4%;
-	display: flex;
-	float: left;
-	background: #f8f8f8;
-}
-
-.designerWrapRow section:nth-of-type(odd){
-	margin-right: 4%;
-}
-/*.designerWrapRow section:nth-of-type(even){
-	background-color: red;
-}*/
-
-.DesignerLeftTopImgWrap,.DesignerRightBtnDiv{
-	width: 50%;
-	
-}
-.DesignerLeftTopImg{
-	max-width: 100%;
-	max-height: 100%;
-}
-.DesignerRightBtnDiv{
-	padding: 5%;
-	text-align: left;
-}
-
-.designerName{
-	font-size: 26px;
-	color: #000000;
-	margin: 0px;
-	padding: 0px;
-}
-
-.sedignerAddr{
-	color: #888;
-	font-size: 12px;
-	margin: 15px 0px 0px;
-	display: block;
-}
-
-.designerHr{
-	margin: 26px 0px;
-	height: 1px;
-	width: 26px;
-	border: none;
-	background-color: #000;
-}
-
-.designerAnnounce{
-	color: #888;
-	line-height: 24px;
-    font-size: 12px;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-/*发展历程*/
-.developingRout{
-	padding: 60px 0px 90px;
-}
-.developeWords{
-	width:61.6%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 60px;
-	text-align: center;   
-	line-height: 24px;
-	font-size: 14px;
-	color: #888;		
-}
-
-.developeUl{
-	width: 80%;
-	margin: 0 auto;
-	color: #A6A6A6;
-	border-top: 1px dashed #e5e5e5;
-}
-.developeLi{
-	width: 100%;
-	padding: 20px 0px;
-    border-bottom: 1px dashed #e5e5e5;
-    text-align: left;
-}
-.developeLiYear{
-	font-size: 24px;
-	display: inline-block;
-	vertical-align: middle;
-	
-}
-.developeImg{
-	vertical-align: middle;
-	margin: 0px 20px;
-}
-.develope9th{
-	font-size: 14px;
-	vertical-align: middle;
-	
-}
 
 
 /*--------宗旨电话邮箱地址--------*/
@@ -397,11 +437,6 @@ footer{
  */
 
 
-@media only screen and (min-width:767px) {
-	.secDiv{
-		display: none;
-	}
-}
 /*PC 993+*/
 @media only screen and (min-width:993px ) {
 	.logo img{
@@ -430,6 +465,9 @@ footer{
 	.footerLeftBox{
 		text-align: left;
 	}
+	.secDiv{
+		display: none;
+	}
 	
 
 }
@@ -454,20 +492,7 @@ footer{
 
 
 @media only screen and (min-width: 992px) and (max-width: 1080px) {
-	.DesignerRightBtnDiv{
-		padding: 4%;
-	}
-	.sedignerAddr{
-		margin: 12px 0px 0px;
-	}
-	
-	.designerHr{
-		margin: 14px 0px;
-	}
-	
-	.designerAnnounce{
-		line-height: 22px;
-	}
+
 }
 
 /*992px以下时导航条菜单样式重置
@@ -482,6 +507,7 @@ footer{
 	.myNav{
 		padding: 5px 20px;
 	}
+	
 	/*下拉菜单,<=992不显示*/
 	.dropdownSection{
 		display: none;
@@ -566,80 +592,79 @@ footer{
 		padding: 0px;
 		margin: 0px;	
 	}
-	.tabDropDownTitle{
-		font-size: 20px;
-		margin: 12px 0px 16px;
-	}
-	.tabDropDownContent{		
-		line-height: 30px;
-		font-size: 12px;
-	}
-	.tabDropDownDivWords{
-		padding: 4% 0;
-	}
-	.tabDropDownDivImgs{
-		padding: 4% 0;
-	}
-	.developeWords{
-		width: 88%;
-		font-size: 14px;
-		margin-bottom: 34px;
-	}
-	.developingRout{
-		padding: 38px 0px 54px;
-	}
-	.developeUl{
-		width: 88%;
-	}
-	.developeLi{
-		padding: 16px 0px;
-	}
-	.developeImg{
-		margin: 0px 16px;
-	}
-	.develope9th{
-		font-size: 13px;
+	
+	.tabLi{
+		padding: 20px 6px;	
+		margin: 0px 10px;
+		
 	}
 	
-	.designerWrapRow{
-		width: 96%;
+
+
+	
+	.tabDropDownDiv{
+		padding: 18px 0 28px
 	}
-	.designerWrap{
+	
+	/*新品/NEW-*/
+	.newArrivalRow{
+		margin-bottom: 16px;
+	
+	}
+	/*.newArrivalRow{
+		margin-bottom: 10px;
+		flex-wrap: wrap;
+	
+	}
+	.newArrivalBox{
 		width: 49%;
-		margin-bottom: 2%;
+		
+	}*/
+	/*.newArrivalImgWrap{
+		width: 100%;
+		overflow: hidden; 
+	}*/
+	/*.newArrivalImg{
+		max-width: 100%;
+		max-height: 100%;
+		transition: 0.5s;
+	}*/
+	/*.newArrivalImg:hover{
+		transform: scale(1.06);
+	}*/
+	
 
-	}
-	
-	.designerWrapRow section:nth-of-type(odd){
-		margin-right: 2%;
+	.newArrivalWhiteInner{
+
+	    padding: 15px 0;
 	}
 
+	.newArrivalP1{
+		font-size: 14px;
+		
+	}
+	/*.newArrivalP2{
+		width: 100%;
+		padding: 0px;
+		margin: 0 auto;
+	}*/
 	
-	.designerName{
-		font-size: 20px;
+	.newArrivalOrder{
+		font-size: 50px;
+		right: 8px;
+		bottom: 5px;
 	}
-	.DesignerRightBtnDiv{
-		padding: 2%;
-	}
-	.sedignerAddr{
-		margin: 10px 0px 0px;
-	}
-	
-	.designerHr{
-		margin: 10px 0px;
-	}
-	
-	.designerAnnounce{
-		line-height: 20px;
+	.newArrivalBlackRetang{
+		width: 3px;
+	    height: 30px;
+	    left: 10px;
+	    /*bottom: -20px;*/
 	}
 	.footerLeftBox{
 		text-align: left;
 	}
-}
-
-/*手机 <=767*/
-@media only screen and (max-width: 768px) {
-	/*轮播*/
+	
+			/*轮播*/
 	.secDiv{
 		display: none;
 		width: 100%;
@@ -662,92 +687,74 @@ footer{
 		color: #fff;
 		text-decoration: none;
 	}
+
+
+}
+
+/*手机 <=767*/
+@media only screen and (max-width: 768px) {
+
 	.banner2{
 		min-height: 38vh;
 	}
 	
-	.tabDropDownDivWords{
-		width: 96%;
-	}
-	.tabDropDownTitle{
-		color: #363636;
-		font-size: 16px;
-		margin: 6px 0px 10px;
-	}
-	.tabDropDownContent{		
-		line-height: 22px;
-		font-size: 12px;
-	}
 	.tabLi{
-		padding: 12px 0;
-	}
-	.designerWrap{
-		width: 49%;
-		margin-bottom: 4%;
-		display: block;
-		float: left;
-		background: #f8f8f8;
-	}
-	.tabDropDownDivImgs img{
-		max-height: 145px;
-	}
-	/*设计团队*/
-	.DesignerLeftTopImgWrap,.DesignerRightBtnDiv{
-		width: 100%;
-		display: block;	
-		clear: both;
-	}
-	.DesignerRightBtnDiv{
-		padding: 4%;
+		padding: 16px 5px;	
+		margin: 0px 6px;
 		
 	}
-	.tabDropDownDivImgs{
-		width:94%;
-	}
-	.designerAnnounce{
-		/*显示三行,超出部分用省略号*/
-		overflow: hidden;
-	    text-overflow: ellipsis;
-	    display: -webkit-box !important;
-	    -webkit-box-orient: vertical;
-	    -webkit-line-clamp: 3;   /*显示3行*/
-	}
-	/*发展历程*/
-	.developingRout{
-		padding: 19px 0px 20px;
-	}
-	.developeWords{
-		width: 88%;
+	.tabLi a{
 		font-size: 12px;
-		margin-bottom: 22px;
 	}
-	.developeUl{
-		width: 86%;
+	.tabDropDownDiv{
+		padding: 15px 0 0px
 	}
-	.developeLi{
-		display: flex;
-		padding: 14px 0px;
-		align-items: center;
-		justify-content: space-between;
+
+	/*新品/NEW-*/
+	.newArrivalRow{
+		/*margin-bottom: 16px;*/
+		flex-wrap: wrap;		
 	}
-	.developeImg{
-		width:21px;
-		height:5px;
-		margin: 0px 10px;
+	.newArrivalBox{
+		width: 49%;	
+		margin-bottom: 3%;
+	}
+
+	.newArrivalWhiteInner{
+	    padding: 10px 0;
+	    
 
 	}
-	.develope9th{
-		font-size: 12px;
-		
+
+	.newArrivalP1{
+		font-size: 16px;
+	}
+
+
+	
+	.newArrivalOrder{
+		/*font-size: 60px;
+		right: 10px;
+		bottom: 6px;*/
+		display: none;
+
+	}
+	.newArrivalBlackRetang{
+		/*width: 3px;
+	    height: 40px;*/
+	   display: none;
+	}
+	.ourInformationWrap{
+		padding: 20px 2%;
 	}
 	.ourDeclaration{
-		font-size:16px;
-		margin:10px 0;
-	}
-	.developeLiYear{
+		margin: 10px 0;
 		font-size: 16px;
-		width: 60px;
 	}
+
+
+
+
 		
 	
 	/*邮箱地址电话*/
@@ -755,10 +762,6 @@ footer{
 		width: 80%;
 		margin: 0 auto;
 		display: block;
-	}
-	.ourInformationWrap{
-		padding: 20px 2%;
-		box-sizing: border-box;
 	}
 	
 	.addrInfo{		
@@ -831,9 +834,6 @@ footer{
 
 @media only screen and (max-width: 450px) {
 	/*邮箱地址电话*/
-	.tabDropDownDivImgs img{
-		max-height: 76px;
-	}
 
 	.ourInfo{
 		width: 90%;
@@ -869,11 +869,4 @@ footer{
 		
 	}
 	
-}
-
-@media only screen and (max-width:380px) {
-	.tabDropDownDivImgs img{
-		max-height: 71px;
-	}
-
 }
