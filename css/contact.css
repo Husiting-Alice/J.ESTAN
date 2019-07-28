@@ -324,11 +324,7 @@ footer{
  * 超小屏幕 <768 （移动设备）
  */
 
-@media only screen and (min-width:767px) {
-	.secDiv{
-		display: none;
-	}
-}
+
 
 /*PC 993+*/
 @media only screen and (min-width:993px ) {
@@ -357,6 +353,9 @@ footer{
 	}
 	.footerLeftBox{
 		text-align: left;
+	}
+	.secDiv{
+		display: none;
 	}
 	
 
@@ -485,13 +484,7 @@ footer{
 	.footerLeftBox{
 		text-align: left;
 	}
-
-
-}
-
-/*手机 <=767*/
-@media only screen and (max-width: 768px) {
-			/*轮播*/
+				/*轮播*/
 	.secDiv{
 		display: none;
 		width: 100%;
@@ -514,6 +507,13 @@ footer{
 		color: #fff;
 		text-decoration: none;
 	}
+
+
+}
+
+/*手机 <=767*/
+@media only screen and (max-width: 768px) {
+
 	.banner2{
 		min-height: 38vh;
 	}
