@@ -736,15 +736,6 @@ footer{
 }
 
 /*平板+手机 的交集  <=992*/
-@media only screen and (min-width: 768px) {
-	.secDiv{
-		display: none;
-	}
-	
-}
-
-
-
 
 
 /*PC 993-1200*/
@@ -755,6 +746,9 @@ footer{
 	}
 	.footerLeftBox{
 		text-align: left;
+	}
+	.secDiv{
+		display: none;
 	}
 
 }
@@ -916,11 +910,6 @@ footer{
 		text-align: left;
 	}
 	
-	
-}
-
-/*手机 <=767*/
-@media only screen and (max-width: 768px) {
 	/*轮播*/
 	.secDiv{
 		display: none;
@@ -944,6 +933,13 @@ footer{
 		color: #fff;
 		text-decoration: none;
 	}
+	
+	
+	
+}
+
+/*手机 <=767*/
+@media only screen and (max-width: 768px) {
 	
 	.fullscreen{
 		position: absolute;
