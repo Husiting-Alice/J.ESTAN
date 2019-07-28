@@ -252,12 +252,12 @@
 .clothesAdmireImgWrap img{
 	width: 100%;
 	height: 100%;
-	 -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+	-webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
     filter: grayscale(50%);
 }
 .clothesAdmireImgWrap img:hover{
 	transform: scale(1.1);
-	 -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+	-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
     filter: grayscale(0);
 }
 
@@ -935,6 +935,14 @@ footer{
 		color: #fff;
 		text-decoration: none;
 		font-size: 14px !important;
+	}
+	.secA:link{
+		color: #fff;
+		text-decoration: none;
+	}
+	.secA:visited{
+		color: #fff;
+		text-decoration: none;
 	}
 	
 	.fullscreen{

@@ -397,7 +397,11 @@ footer{
  */
 
 
-
+@media only screen and (min-width:767px) {
+	.secDiv{
+		display: none;
+	}
+}
 /*PC 993+*/
 @media only screen and (min-width:993px ) {
 	.logo img{
@@ -429,6 +433,7 @@ footer{
 	
 
 }
+
 @media only screen and (max-width: 1350px) {
 		.footerNav a{
 			margin: 0 10px;
@@ -634,6 +639,29 @@ footer{
 
 /*手机 <=767*/
 @media only screen and (max-width: 768px) {
+	/*轮播*/
+	.secDiv{
+		display: none;
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+		
+	}
+	.secA{
+		display: inline-block;
+		margin: 0 10px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px !important;
+	}
+	.secA:link{
+		color: #fff;
+		text-decoration: none;
+	}
+	.secA:visited{
+		color: #fff;
+		text-decoration: none;
+	}
 	.banner2{
 		min-height: 38vh;
 	}
@@ -659,6 +687,9 @@ footer{
 		display: block;
 		float: left;
 		background: #f8f8f8;
+	}
+	.tabDropDownDivImgs img{
+		max-height: 145px;
 	}
 	/*设计团队*/
 	.DesignerLeftTopImgWrap,.DesignerRightBtnDiv{
@@ -800,6 +831,9 @@ footer{
 
 @media only screen and (max-width: 450px) {
 	/*邮箱地址电话*/
+	.tabDropDownDivImgs img{
+		max-height: 76px;
+	}
 
 	.ourInfo{
 		width: 90%;
@@ -835,4 +869,11 @@ footer{
 		
 	}
 	
+}
+
+@media only screen and (max-width:380px) {
+	.tabDropDownDivImgs img{
+		max-height: 71px;
+	}
+
 }

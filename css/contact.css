@@ -324,7 +324,11 @@ footer{
  * 超小屏幕 <768 （移动设备）
  */
 
-
+@media only screen and (min-width:767px) {
+	.secDiv{
+		display: none;
+	}
+}
 
 /*PC 993+*/
 @media only screen and (min-width:993px ) {
@@ -487,6 +491,29 @@ footer{
 
 /*手机 <=767*/
 @media only screen and (max-width: 768px) {
+			/*轮播*/
+	.secDiv{
+		display: none;
+		width: 100%;
+		margin-top: 10px;
+		text-align: center;
+		
+	}
+	.secA{
+		display: inline-block;
+		margin: 0 10px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px !important;
+	}
+	.secA:link{
+		color: #fff;
+		text-decoration: none;
+	}
+	.secA:visited{
+		color: #fff;
+		text-decoration: none;
+	}
 	.banner2{
 		min-height: 38vh;
 	}
