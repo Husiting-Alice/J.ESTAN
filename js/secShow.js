@@ -1,6 +1,6 @@
 function showSec(){
 	var cw = document.body.clientWidth;
-	if(cw > 768){	
+	if(cw > 992){	
 		$('.secDiv').css("display","none");		
 	
 	}else{
